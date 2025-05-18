@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:fontFamily="@font/lobster_two"
+    tools:context="activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg4" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lobster_two"
+                android:gravity="center_horizontal"
+                android:text="Csaladi Receptkönyv"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:layout_width="116dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:alpha="0.9"
+                app:tint="@color/white" />
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/lobster_two"
+                android:autofillHints="felhasznalónév"
+                android:background="@drawable/rounded_login"
+                android:hint="@string/username"
+                android:textColorHint="@color/white"
+                android:inputType="text"
+                android:padding="18dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/lobster_two"
+                android:autofillHints="password"
+                android:background="@drawable/rounded_login"
+                android:hint="@string/password"
+                android:textColorHint="@color/white"
+                android:inputType="textPassword"
+                android:padding="18dp"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/loginbttn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F44336"
+                android:onClick="login"
+                android:fontFamily="@font/lobster_two"
+                android:text="@string/login"
+                app:iconTint="#F44336"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                tools:ignore="UsingOnClickInXml" />
+
+            <Button
+                android:id="@+id/regbttnbttn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4BF44336"
+                android:fontFamily="@font/lobster_two"
+                android:onClick="register"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:text="@string/registration"
+                app:iconTint="#3AF44336" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
+

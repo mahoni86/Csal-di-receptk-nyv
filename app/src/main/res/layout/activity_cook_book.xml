@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    android:gravity="center"
+    android:padding="16dp"
+    android:fontFamily="@font/lobster_two"
+    tools:context="activities.cookBookActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobster_two"
+            android:gravity="center_horizontal"
+            android:text="Menü"
+            android:textColor="@color/white"
+            android:paddingBottom="15dp"
+            android:textSize="50sp"/>
+
+        <LinearLayout
+            android:id="@+id/menu1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_login"
+            android:backgroundTint="#4BFFFFFF"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="UsingOnClickInXml">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sertes"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="ikon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sertrés Ételek"
+                android:shadowColor="@color/black"
+                android:shadowRadius="5"
+                android:gravity="end"
+                android:paddingEnd="90dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/lobster_two"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_login"
+            android:backgroundTint="#4BFFFFFF"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/csirke"
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"
+                android:contentDescription="ikon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Csirkés ételek"
+                android:shadowColor="@color/black"
+                android:shadowRadius="5"
+                android:gravity="end"
+                android:paddingEnd="90dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/lobster_two"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"
+                tools:ignore="RtlSymmetry" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_login"
+            android:backgroundTint="#4BFFFFFF"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/gluten_free"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="ikon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glutén mentes"
+                android:shadowColor="@color/black"
+                android:shadowRadius="5"
+                android:gravity="end"
+                android:paddingEnd="90dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/lobster_two"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_login"
+            android:backgroundTint="#4BFFFFFF"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/desszert"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="ikon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deszertek"
+                android:shadowColor="@color/black"
+                android:shadowRadius="5"
+                android:gravity="end"
+                android:paddingEnd="90dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/lobster_two"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+        <!--<LinearLayout
+            android:id="@+id/menu5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_login"
+            android:backgroundTint="#4BFFFFFF"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/sos"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="ikon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sós sütik"
+                android:shadowColor="@color/black"
+                android:shadowRadius="5"
+                android:gravity="end"
+                android:paddingEnd="90dp"
+                android:textSize="25sp"
+                android:fontFamily="@font/lobster_two"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>-->
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+
+    android:fontFamily="@font/lobster_two"
+    tools:context="foMenu.sos">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg4" />
+    <TextView
+        android:id="@+id/sos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster_two"
+        android:gravity="center_horizontal"
+        android:text="Sós sütik"
+        android:textColor="@color/white"
+        android:paddingBottom="15dp"
+        android:textSize="50sp"/>
+
+    <ImageButton
+        android:id="@+id/addRecipeButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/add"
+        android:contentDescription="@string/add"/>
+
+</RelativeLayout>

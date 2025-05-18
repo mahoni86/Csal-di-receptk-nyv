@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context="activities.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster_two"
+        android:gravity="center_horizontal"
+        android:text="@string/family"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster_two"
+        android:gravity="center_horizontal"
+        android:text="@string/receptbook"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/lobster_two"
+        android:gravity="center_horizontal"
+        android:text="@string/regisztráció"
+        tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="név"
+            android:textColorHint="@color/white"
+            android:padding="5dp"
+            android:fontFamily="@font/lobster_two"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_login"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="felhasználó név"
+            android:textColorHint="@color/white"
+            android:padding="5dp"
+            android:fontFamily="@font/lobster_two"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_login"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e-mail cím"
+            android:textColorHint="@color/white"
+            android:padding="5dp"
+            android:fontFamily="@font/lobster_two"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_login"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="jelszó"
+            android:textColorHint="@color/white"
+            android:padding="5dp"
+            android:fontFamily="@font/lobster_two"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_login"/>
+
+        <Button
+            android:id="@+id/regbttnbttn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:fontFamily="@font/lobster_two"
+            android:onClick="register"
+            android:text="@string/registration"
+            android:padding="15dp"
+            android:layout_margin="110dp"
+            app:iconTint="#F44336" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

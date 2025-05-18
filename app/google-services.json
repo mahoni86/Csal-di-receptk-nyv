@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "899262340898",
+    "project_id": "csaladireceptkonyv-63b1f",
+    "storage_bucket": "csaladireceptkonyv-63b1f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899262340898:android:a731bcf468a71127a68f7b",
+        "android_client_info": {
+          "package_name": "com.example.csaladireceptknyv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAbz6x-CxFVXQpMT7oc-Z-FhzoEAscBU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
